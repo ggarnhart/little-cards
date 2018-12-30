@@ -24,8 +24,8 @@ class Card extends Component {
               onTwitterChange={this.handleNewTwitter}
             />
           </div>
-          <div className="col-lg-6">
-            <div className="card col-md-7 col-lg-8">
+          <div className="col-lg-6 d-flex justify-content-md-center justify-content-sm-center justify-content-xs-center justify-content-lg-end">
+            <div className="card col-md-7 col-lg-8 ">
               <div className={this.classFormaterTop()}>
                 <img
                   src={this.state.imgSource}

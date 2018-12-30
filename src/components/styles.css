@@ -12,7 +12,7 @@ body {
 
 .full-height {
   display: flex;
-  min-height: 95vh;
+  min-height: 89vh;
   flex-direction: column;
   justify-content: center;
 }
@@ -27,8 +27,7 @@ body {
   max-width: 400px;
   max-height: 560px;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
+
   min-height: 35em;
   background: transparent;
   border-radius: 15 px !important;
@@ -167,8 +166,7 @@ body {
 
 .flex-form > input[type="submit"] {
   background-color: #4a4a4a;
-  width: 20vw;
-  font-size: 30px;
+  font-size: 2em;
   border-radius: 10px;
   color: white;
   padding-top: 0.5em;
@@ -176,6 +174,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 3em;
 }
 
 .flex-form > input[type="submit"]:hover {
@@ -183,15 +182,8 @@ body {
   cursor: pointer;
 }
 
-.radio-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .radio-img {
   height: 3em;
-
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 

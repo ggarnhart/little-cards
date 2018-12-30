@@ -29,7 +29,9 @@ class Form extends Component {
           <br />
           <div className="row">
             <div className="col">
-              <label for="twitter-name">Twitter Username</label>
+              <label for="twitter-name">
+                Twitter Username—hit update to see changes
+              </label>
               <br />
               <input
                 type="text"
@@ -42,8 +44,8 @@ class Form extends Component {
           <br />
           <br />
           {/* Radio Buttons */}
-          <div className="radio-div">
-            <label>
+          <div className="row">
+            <label className="col">
               <input
                 type="radio"
                 name="logos"
@@ -56,7 +58,7 @@ class Form extends Component {
               />
             </label>
 
-            <label>
+            <label className="col">
               <input
                 type="radio"
                 name="logos"
@@ -70,7 +72,7 @@ class Form extends Component {
               />
             </label>
 
-            <label>
+            <label className="col">
               <input
                 type="radio"
                 name="logos"
@@ -83,7 +85,7 @@ class Form extends Component {
               />
             </label>
 
-            <label>
+            <label className="col">
               <input
                 type="radio"
                 name="logos"
@@ -96,7 +98,7 @@ class Form extends Component {
               />
             </label>
 
-            <label>
+            <label className="col">
               <input
                 type="radio"
                 name="logos"
@@ -130,8 +132,10 @@ class Form extends Component {
   };
 
   handleCodeChange = event => {
-    this.setState({ value: event.target.value });
-    this.props.onCodeChange(this.state.value);
+    event.preventDefault();
+    const value = event.target.value;
+    this.setState({ value });
+    this.props.onCodeChange(value);
   };
 
   handleCompanyChange = event => {
@@ -143,7 +147,6 @@ class Form extends Component {
 
   handleTwitterChange = event => {
     this.setState({ twitter: event.target.value });
-    this.props.onTwitterChange(this.state.twitter);
   };
 }
 
