@@ -49,7 +49,7 @@ class Card extends Component {
                 </div>
               </div>
               <br />
-              <CodeButton url="https://github.com/ggarnhart/little-cards/blob/master/src/components/card.jsx" />
+              <CodeButton url="https://github.com/ggarnhart/little-cards/" />
             </div>
             <br />
           </div>
