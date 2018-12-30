@@ -1,0 +1,243 @@
+html {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3 !important;
+}
+
+.full-height {
+  display: flex;
+  min-height: 95vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 40vw;
+  height: 50vw;
+  margin: 0;
+  text-align: center;
+  max-width: 400px;
+  max-height: 560px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 35em;
+  background: transparent;
+  border-radius: 15 px !important;
+}
+
+.card:hover,
+.card-bottom:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-top {
+  background: #ffffff;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 10%;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-height: 40%;
+}
+
+.card-bottom {
+  color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 10%;
+  min-height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.lyft-top > .logo {
+  width: 35%;
+
+  margin-bottom: 10vh;
+}
+
+.uber-top > .logo {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 12vh;
+}
+
+.airbnb-top > .logo {
+  width: 50%;
+  height: 50%;
+}
+
+.instacart-top > .logo {
+  width: 50%;
+  height: 50%;
+}
+
+.robinhood-top > .logo {
+  width: 25%;
+  height: 25%;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twitter-profile {
+  max-height: 25%;
+  border-radius: 50%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 45%;
+}
+
+.border {
+  width: 50%;
+  border-bottom: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lyft-bottom {
+  background: #ea0b8c;
+}
+
+.uber-bottom {
+  background: #000000;
+}
+
+.airbnb-bottom {
+  background: #ff5a60;
+}
+
+.instacart-bottom {
+  background: #43b029;
+}
+
+.robinhood-bottom {
+  background: #22ce99;
+}
+
+/************ FORM DIV ******************/
+.form-div {
+  width: 50%;
+  color: #4a4a4a;
+  display: flex;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-form > label {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.flex-form > input[type="text"] {
+  font-weight: 500;
+  font-size: 50px;
+  border-bottom: #4a4a4a 2px solid;
+  background: #f3f3f3;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.flex-form > input[type="submit"] {
+  background-color: #4a4a4a;
+  width: 20vw;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.flex-form > input[type="submit"]:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+.radio-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.radio-img {
+  height: 3em;
+
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="radio"] + img {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + img {
+  border: 3px #141414 solid;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  filter: grayscale(0%);
+}
+
+input[type="radio"] + img {
+  border: 3px transparent solid;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+input[type="radio"] + img:hover {
+  filter: grayscale(0%);
+}
+
+.box {
+  background: blue;
+  height: 50vh;
+}
+
+/********** FOOTER ************/
+.page-footer {
+  height: 5vh;
+  padding: 10px 0px 20px 0px;
+}
