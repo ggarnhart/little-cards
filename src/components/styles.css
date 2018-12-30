@@ -219,6 +219,7 @@ input[type="radio"] + img:hover {
 .page-footer {
   height: 5vh;
   padding: 10px 0px 20px 0px;
+  margin-top: 2em;
 }
 
 /********** REFBAR ************/
@@ -241,6 +242,7 @@ input[type="radio"] + img:hover {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
 .code-button {

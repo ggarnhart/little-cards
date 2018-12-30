@@ -5,6 +5,7 @@ import Card from "./components/card";
 import Footer from "./components/footer";
 import Navbar from "./components/nav";
 import RefBar from "./components/ref";
+import IntroMessage from "./components/introMessage";
 
 class App extends Component {
   render() {
@@ -12,8 +13,8 @@ class App extends Component {
       <React.Fragment>
         <Navbar />
         <RefBar reference={this.getRef()} />
+        <IntroMessage />
         <Card />
-        <Footer />
       </React.Fragment>
     );
   }
