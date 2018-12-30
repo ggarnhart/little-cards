@@ -11,23 +11,35 @@ class Form extends Component {
     return (
       <div className="form-div">
         <form onSubmit={this.handleSubmit} className="flex-form">
-          <label for="code-input" id="loyalty-code-label">
-            Loyalty Code
-          </label>
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleCodeChange}
-            id="code-input"
-          />
+          <div className="row">
+            <div className="col">
+              <label for="code-input" id="loyalty-code-label">
+                Loyalty Code
+              </label>
+              <br />
+              <input
+                type="text"
+                value={this.state.value}
+                onChange={this.handleCodeChange}
+                id="code-input"
+              />
+            </div>
+          </div>
           <br />
-          <label for="twitter-name">Twitter Username</label>
-          <input
-            type="text"
-            id="twitter-username"
-            placeholder="@"
-            onChange={this.handleTwitterChange}
-          />
+          <br />
+          <div className="row">
+            <div className="col">
+              <label for="twitter-name">Twitter Username</label>
+              <br />
+              <input
+                type="text"
+                id="twitter-username"
+                placeholder="@"
+                onChange={this.handleTwitterChange}
+              />
+            </div>
+          </div>
+          <br />
           <br />
           {/* Radio Buttons */}
           <div className="radio-div">
@@ -119,16 +131,19 @@ class Form extends Component {
 
   handleCodeChange = event => {
     this.setState({ value: event.target.value });
+    this.props.onCodeChange(this.state.value);
   };
 
   handleCompanyChange = event => {
     // event.preventDefault();
     const company = event.target.value;
     this.setState({ company });
+    this.props.onCompanyChange(company);
   };
 
   handleTwitterChange = event => {
     this.setState({ twitter: event.target.value });
+    this.props.onTwitterChange(this.state.twitter);
   };
 }
 

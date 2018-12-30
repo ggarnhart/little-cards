@@ -147,25 +147,17 @@ body {
 
 /************ FORM DIV ******************/
 .form-div {
-  width: 50%;
   color: #4a4a4a;
-  display: flex;
-}
-
-.flex-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .flex-form > label {
   font-weight: 200;
-  font-size: 25px;
+  font-size: 3em;
 }
 
-.flex-form > input[type="text"] {
+.flex-form > .row > .col > input[type="text"] {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 2em;
   border-bottom: #4a4a4a 2px solid;
   background: #f3f3f3;
   border-top: none;
