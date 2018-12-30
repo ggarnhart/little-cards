@@ -4,7 +4,9 @@ class Footer extends Component {
   render() {
     return (
       <footer className="page-footer row">
-        <div className="container">Made with ❤️ by Greg Garnhart</div>
+        <div className="container">
+          <div className="col">Made with ❤️ by Greg Garnhart</div>
+        </div>
       </footer>
     );
   }
