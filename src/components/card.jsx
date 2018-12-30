@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Form from "./form";
+import CodeButton from "./codeButton";
 
 class Card extends Component {
   state = {
@@ -47,7 +48,10 @@ class Card extends Component {
                   </span>
                 </div>
               </div>
+              <br />
+              <CodeButton url="https://github.com/ggarnhart/little-cards/blob/master/src/components/card.jsx" />
             </div>
+            <br />
           </div>
         </div>
       </div>
