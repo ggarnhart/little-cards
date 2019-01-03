@@ -9,8 +9,8 @@ class Navbar extends Component {
             Little Cards
           </a>
           <div className="navbar-nav">
-            <a href="https://ggarnhart.com" className="nav-item nav-link">
-              Say Hi
+            <a href="#about" className="nav-item nav-link">
+              Wait, what is this?
             </a>
           </div>
         </div>

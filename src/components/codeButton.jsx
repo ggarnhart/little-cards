@@ -6,7 +6,7 @@ class CodeButton extends Component {
     return (
       <a target="_blank" href={this.formatLink()} className="button-link">
         <button className="code-button">
-          <i class="fas fa-code" /> Get the Code
+          <i class="fas fa-code" /> See the Code
         </button>
       </a>
     );

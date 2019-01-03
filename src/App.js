@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/nav";
 import RefBar from "./components/ref";
 import IntroMessage from "./components/introMessage";
+import About from "./components/about";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <RefBar reference={this.getRef()} />
         <IntroMessage />
         <Card />
+        <About />
       </React.Fragment>
     );
   }
