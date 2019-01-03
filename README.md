@@ -1,3 +1,6 @@
+# You should visit the github pages version of this application
+[Click here](http://ggarnhart.github.io/little-cards)
+
 # Little Cards
 
 Little Cards is a great way to show off those pesky referral codes every startup in existence gives you. Whether it is on your personal site, your blog, or somewhere else on the web, Little Cards will fit right in.
